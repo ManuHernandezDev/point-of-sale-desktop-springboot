@@ -8,6 +8,7 @@ class PointOfSaleApplicationTests {
 
 	@Test
 	void contextLoads() {
+		// Esta prueba solo verifica que Spring pueda arrancar sin explotar
 	}
 
 }
