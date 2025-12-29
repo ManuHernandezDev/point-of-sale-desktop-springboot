@@ -1,4 +1,4 @@
-package com.michingon.point_of_sale;
+package com.michingon.point_of_sale.config;
 
 import org.springframework.context.ApplicationEvent;
 

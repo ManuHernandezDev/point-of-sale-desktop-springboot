@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import com.michingon.point_of_sale.config.StageReadyEvent;
+
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.stage.Stage;
@@ -35,5 +37,4 @@ public class PointOfSaleApplication extends Application {
 		applicationContext.close();
 		Platform.exit();
 	}
-
 }
