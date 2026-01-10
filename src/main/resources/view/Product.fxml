@@ -13,6 +13,7 @@
     <TableView fx:id="tablaProductos" VBox.vgrow="ALWAYS">
         <columns>
             <TableColumn fx:id="colId" text="ID"/>
+            <TableColumn fx:id="colBarcode" text="Barcode"/>
             <TableColumn fx:id="colName" text="Name"/>
             <TableColumn fx:id="colDescription" text="Description"/>
             <TableColumn fx:id="colPrice" text="Price"/>
