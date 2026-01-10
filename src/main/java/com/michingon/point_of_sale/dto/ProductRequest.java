@@ -21,8 +21,8 @@ public class ProductRequest {
 
     private String description;
 
-    @NotBlank(message = "Size is necesary")
-    private String size;
+    @NotNull(message = "Size is necesary")
+    private Double size;
 
     @NotBlank(message = "Color is necesary")
     private String color;

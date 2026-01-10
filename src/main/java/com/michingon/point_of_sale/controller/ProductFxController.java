@@ -30,6 +30,8 @@ public class ProductFxController implements Initializable {
     @FXML
     private TableColumn<ProductResponse, Long> colId;
     @FXML
+    private TableColumn<ProductResponse, String> colBarcode;
+    @FXML
     private TableColumn<ProductResponse, String> colName;
     @FXML
     private TableColumn<ProductResponse, BigDecimal> colPrice;
@@ -45,13 +47,15 @@ public class ProductFxController implements Initializable {
     private void configureColumns() {
 
         colId.setCellValueFactory(new PropertyValueFactory<>("id"));
+        colBarcode.setCellValueFactory(new PropertyValueFactory<>("barcode"));
         colName.setCellValueFactory(new PropertyValueFactory<>("name"));
         colPrice.setCellValueFactory(new PropertyValueFactory<>("price"));
         colDescription.setCellValueFactory(new PropertyValueFactory<>("description"));
 
         colId.prefWidthProperty().bind(tablaProductos.widthProperty().multiply(0.10));
-        colName.prefWidthProperty().bind(tablaProductos.widthProperty().multiply(0.30));
-        colDescription.prefWidthProperty().bind(tablaProductos.widthProperty().multiply(0.40));
+        colBarcode.prefWidthProperty().bind(tablaProductos.widthProperty().multiply(0.20));
+        colName.prefWidthProperty().bind(tablaProductos.widthProperty().multiply(0.20));
+        colDescription.prefWidthProperty().bind(tablaProductos.widthProperty().multiply(0.30));
         colPrice.prefWidthProperty().bind(tablaProductos.widthProperty().multiply(0.20));
     }
 
